@@ -1,0 +1,227 @@
+body
+{
+	padding		: 0;
+	margin		: 0;
+	height		: 100%;
+	font-family	: Geneva, "Trebuchet MS", Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size	: 10pt;
+	color		: #3D3D3D;
+}
+
+a
+{
+	color		: #506C5B;
+	text-decoration	: none;
+	font-weight	: bold;
+	border-left	: 2px solid white;
+	padding		: 0 0 0 5px;
+}
+
+a:hover
+{
+	border-left-color : #506C5B;
+}
+
+input
+{
+	border		: 1px solid #80743C;
+	padding-left	: 2px;
+	padding-right	: 2px;
+	background	: #D9D6C5;
+}
+
+div.contenu
+{
+	margin		: 15px 0 0 320px;
+}
+
+div.recap
+{
+	position	: fixed;
+	right		: 0;
+	top		: 0;
+	margin		: 9px 20px 0 0;
+	padding		: 0 10px 0 10px;
+	border		: 2px dotted #7C0287;
+}
+
+h1
+{
+	margin		: 0;
+}
+
+fieldset
+{
+	border		: 2px solid #7C0287;
+	margin-top  : 5px;
+}
+
+fieldset legend
+{
+	color		: #BE81C3;
+	font-weight	: bold;
+}
+
+table
+{
+	float		: left;
+	margin		: 0 20px 10px 5px;
+}
+
+th
+{
+	font-size	: 130%;
+	background	: white;
+/*	border		: 1px solid black;*/
+}
+
+td
+{
+	padding		: 2px 5px 2px 5px;
+}
+
+td.namecol_date, td.namecol_intitule, td.namecol_prix
+{
+	margin		: 0;
+	padding		: 0;
+	text-align	: center;
+}
+
+td.namecol_date
+{
+	width		: 100px;
+}
+
+td.namecol_intitule
+{
+	width		: auto;
+}
+
+td.namecol_prix
+{
+	width		: 70px;
+}
+
+tr.impair
+{
+	background	: #EBD9ED;
+}
+
+tr.pair
+{
+	background	: #DEC0E1;
+}
+
+td
+{
+	text-align	: center;
+}
+
+td.total
+{
+	text-align	: right;
+}
+
+td.nombre
+{
+	text-align	: right;
+}
+
+tr.warning
+{
+	background	: #B35454;
+}
+
+tr.ok
+{
+	background	: #91B394;
+}
+
+form
+{
+	clear		: right;
+}
+
+form.date
+{
+	
+}
+
+div.telecommande
+{
+	position	: fixed;
+	top			: 0;
+	left		: 0;
+	margin-top	: 3px;
+	margin-left	: 5px;
+	/*margin-right	: 600px;*/
+}
+
+div.telecommande form input.date
+{
+	width		: 40px;
+}
+
+div.telecommande form input.prix
+{
+	width		: 50px;
+	text-align	: right;
+}
+
+div.telecommande form label
+{
+	display		: block;
+	color		: #7C0287;
+	font-weight	: bold;
+	margin-top	: 10px;
+}
+
+div.telecommande form .button
+{
+	position	: absolute;
+	margin-top	: 10px;
+	bottom		: 8px;
+	right		: 10px;
+}
+
+div.telecommande form.ajout_dep
+{
+	position	: absolute;
+	top		: 0;
+	left		: 0;
+	width		: 300px;
+}
+
+div.telecommande form.ajout_remb
+{
+	position	: absolute;
+	top		: 223px;
+	left		: 0;
+	width		: 300px;
+}
+
+div.telecommande form.ajout_intitule
+{
+	position	: absolute;
+	top		: 403px;
+	left		: 0;
+	width		: 300px;
+}
+
+div.telecommande .divers
+{
+	position	: absolute;
+	top		: 487px;
+	left		: 0;
+	width		: 300px;
+}
+
+form.date fieldset
+{
+	width		: 142px;
+}
+
+div.telecommande form.misc
+{
+        width           : 300px;
+}
