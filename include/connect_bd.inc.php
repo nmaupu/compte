@@ -1,14 +1,14 @@
 <?php
 
 //
-// CLASSE DE CONNECTION A UNE BASE DE DONNEES MYSQL
+// CLASSE DE CONNEXION A UNE BASE DE DONNEES MYSQL
 //
 class ConnectionBD
 {
-	var $hote="db";		// Machine qui héberge le serveur mysql
-	var $user="compte";	// Utilisateur autorisé à se connecter à la base
-	var $pass="FH_9qj-T"; 		// Mot de passe de connection à la base
-	var $nombd="compte";		// Nom de la base de données
+	var $hote=getenv("DB_ADDR");
+	var $user=getenv("DB_USER");
+	var $pass=getenv("DB_PASSWORD");
+	var $nombd=getenv("DB_NAME");
 	var $db;			// "Pointeur" vers la base de données ouvertes
 	
 
