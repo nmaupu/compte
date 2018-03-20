@@ -5,16 +5,21 @@
 //
 class ConnectionBD
 {
-	var $hote=getenv("DB_ADDR");
-	var $user=getenv("DB_USER");
-	var $pass=getenv("DB_PASSWORD");
-	var $nombd=getenv("DB_NAME");
+	var $hote;
+	var $user;
+	var $pass;
+	var $nombd;
 	var $db;			// "Pointeur" vers la base de données ouvertes
 	
 
 	// "Constructeur" permettant la connection à la base
 	function ConnectionBD()
     	{
+			$this->hote=getenv("DB_ADDR");
+			$this->user=getenv("DB_USER");
+			$this->pass=getenv("DB_PASSWORD");
+			$this->nombd=getenv("DB_NAME");
+
     		// Connection à mysql
 		$this->db=mysql_connect($this->hote,$this->user,$this->pass);
 		if(!$this->db)
