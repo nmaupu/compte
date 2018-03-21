@@ -68,14 +68,14 @@ function print_table_depense($name, $tab_dep, $class_total)
 		if($nb == 0)
 		{
 			echo "\t<tr>\n";
-			echo "\t\t".'<td colspan="'.$c.'">Aucune dépense</td>'."\n";
+			echo "\t\t".'<td colspan="'.$c.'">Aucune dÃ©pense</td>'."\n";
 			echo "\t".'</tr>'."\n";
 		}
 		else
 		{
 			echo "\t<tr>\n";
 			echo "\t\t".'<td class="namecol_date">Date</td>'."\n";
-			echo "\t\t".'<td class="namecol_intitule">Intitulé</td>'."\n";
+			echo "\t\t".'<td class="namecol_intitule">IntitulÃ©</td>'."\n";
 			echo "\t\t".'<td class="namecol_prix">Prix</td>'."\n";
 			echo "\t".'</tr>'."\n";
 			for($i=0; $i<$nb; $i++)
@@ -207,9 +207,9 @@ function get_form_ajout_depense($payeur, $jour, $mois, $annee)
 <!-- Formulaire d'ajout d'une depense commune -->
 <form class="ajout_dep" action="actions/add_depense.php?<?php echo join($params, "&"); ?>" method="post">
 <fieldset>
-	<legend>Ajouter une dépense commune</legend>
+	<legend>Ajouter une dÃ©pense commune</legend>
 	<div class="row"><label for="payeur">Payeur</label><input type="radio" name="payeur" value="Nicolas" <?php echo $checked_nico; ?>/>Nicolas<input type="radio" name="payeur" value="Marianne" <?php echo $checked_marianne; ?>/>Marianne</div>
-	<div class="row"><label for="intitule">Intitulé</label><?php print_combo_intitules(); ?></div>
+	<div class="row"><label for="intitule">IntitulÃ©</label><?php print_combo_intitules(); ?></div>
 	<div class="row"><label for="date">Date</label><span name="date" id="date"><input class="date" type="text" name="jour" id="jour" value="<?php echo $jour; ?>" />&nbsp;/&nbsp;<input class="date" type="mois" name="mois" id="mois" value="<?php echo $mois; ?>" />&nbsp;/&nbsp;<input class="date" type="text" name="annee" id="annee" value="<?php echo $annee; ?>"/></span></div>
 	<div class="row"><label for="prix">Prix</label><input class="prix" type="text" name="prix" id="prix" /> &euro;</div>
 	<div class="row"><input class="button" type="submit" value="Ajouter" /></div>
@@ -259,8 +259,8 @@ function get_form_ajout_intitule()
 <!-- Formulaire d'ajout d'un intitule -->
 <form class="ajout_intitule" action="actions/add_intitule.php" method="post">
 <fieldset>
-	<legend>Ajouter un intitulé</legend>
-	<div class="row"><label for="intitule">Nom de l'intitulé</label><input type="text" name="intitule" /></div>
+	<legend>Ajouter un intitulÃ©</legend>
+	<div class="row"><label for="intitule">Nom de l'intitulÃ©</label><input type="text" name="intitule" /></div>
 	<div class="row"><input class="button" type="submit" value="Ajouter" /></div>
 </fieldset>
 </form>

@@ -21,8 +21,8 @@ if($_POST["login"])
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
 <head>
 	<link rel="stylesheet" type="text/css" href="css/screen.css" media="screen" title="Normal" />
-	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-	<title>Dépenses communes</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" charset="UTF-8"/>
+	<title>DÃ©penses communes</title>
 </head>
 <body>
 
@@ -91,12 +91,12 @@ else
 ?>
 
 <div class="contenu">
-<h1>Dépenses communes</h1>
+<h1>DÃ©penses communes</h1>
 
 
 <?php
 
-/* Génération de la date courante */
+/* GÃ©nÃ©ration de la date courante */
 $date     = date("j-m-Y");
 $tab_date = explode("-", $date);
 $jour     = ltrim($tab_date[0], "0");
@@ -109,8 +109,8 @@ $jour = $jour<10 ? '0'.$jour : $jour;
 
 ?>
 
-<!-- Creation des comboboxes permettant de choisir le mois et l'année -->
-<div><a href="permanent.php">Ajouter une dépense récurrente</a></div>
+<!-- Creation des comboboxes permettant de choisir le mois et l'annÃ©e -->
+<div><a href="permanent.php">Ajouter une dÃ©pense rÃ©currente</a></div>
 <form class="date" action="" method="get">
 	<fieldset>
 	<legend>Date</legend>
@@ -140,12 +140,12 @@ $jour = $jour<10 ? '0'.$jour : $jour;
 <?php
 
 
-/* Résultats des requêtes */
+/* RÃ©sultats des requÃªtes */
 $res_nico     = get_ecriture("Nicolas", $mois, $annee);
 $res_marianne = get_ecriture("Marianne", $mois, $annee);
 $res_remb     = get_remboursement($mois, $annee);
 
-/* Tableau des requêtes */
+/* Tableau des requÃªtes */
 $tab_marianne         = get_table_depense($res_marianne);
 $tab_nico             = get_table_depense($res_nico);
 $tab_remb["Nicolas"]  = get_table_remboursement($res_remb, "Nicolas");
@@ -204,8 +204,8 @@ $form_divers              = get_form_divers();
 </div>
 
 <div class="recap">
-	<p>Différence de <strong><?php echo $tot_diff; ?></strong> &euro;<br />
-	Reste à rembourser : <strong><?php echo $tot_remb; ?></strong> &euro;</p>
+	<p>DiffÃ©rence de <strong><?php echo $tot_diff; ?></strong> &euro;<br />
+	Reste Ã  rembourser : <strong><?php echo $tot_remb; ?></strong> &euro;</p>
 </div>
 
 <div class="telecommande">
