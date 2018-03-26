@@ -195,7 +195,7 @@ div.telecommande form.ajout_dep
 div.telecommande form.ajout_remb
 {
 	position	: absolute;
-	top		: 223px;
+	top			: 230px;
 	left		: 0;
 	width		: 300px;
 }
@@ -203,7 +203,7 @@ div.telecommande form.ajout_remb
 div.telecommande form.ajout_intitule
 {
 	position	: absolute;
-	top		: 403px;
+	top			: 410px;
 	left		: 0;
 	width		: 300px;
 }
@@ -211,7 +211,7 @@ div.telecommande form.ajout_intitule
 div.telecommande .divers
 {
 	position	: absolute;
-	top		: 487px;
+	top			: 494px;
 	left		: 0;
 	width		: 300px;
 }
