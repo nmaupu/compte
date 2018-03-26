@@ -339,6 +339,6 @@ function add_depense($form_values)
   $query = 
     "INSERT INTO ".TBL_PREFIX."dep_commune ".
     "( id_dep , date_dep , intitule_dep , prix_dep, payeur_dep ) ". 
-    "VALUES ('', " . ($date ? "'$date'" : "NOW()" ) . ", '$intitule', '$prix', '$payeur')";
+	"VALUES (0, " . ($date ? "'$date'" : "NOW()" ) . ", '$intitule', '$prix', '$payeur')";
   mysql_query($query);
 }

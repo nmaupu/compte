@@ -8,7 +8,7 @@ require_once("../include/constants.inc.php");
 $intitule = $_POST["intitule"];
 
 $query       = "INSERT INTO `".TBL_PREFIX."intitule` ( `id_intitule` , `nom_intitule`) ".
-               "VALUES ('', '$intitule')";
+               "VALUES (0, '$intitule')";
 connect_bd();
 mysql_query($query);
 
