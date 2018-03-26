@@ -205,7 +205,7 @@ function get_form_ajout_depense($payeur, $jour, $mois, $annee)
 	}
 ?>
 <!-- Formulaire d'ajout d'une depense commune -->
-<form class="ajout_dep" action="actions/add_depense.php?<?php echo join($params, "&"); ?>" method="post">
+<form class="ajout_dep" action="actions/add_depense.php?<?php echo join("&", $params); ?>" method="post">
 <fieldset>
 	<legend>Ajouter une dépense commune</legend>
 	<div class="row"><label for="payeur">Payeur</label><input type="radio" name="payeur" value="Nicolas" <?php echo $checked_nico; ?>/>Nicolas<input type="radio" name="payeur" value="Marianne" <?php echo $checked_marianne; ?>/>Marianne</div>

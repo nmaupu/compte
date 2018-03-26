@@ -16,6 +16,7 @@ $form_values = array("payeur"=>$payeur, "intitule"=>$intitule, "date"=>$date, "p
 connect_bd();
 add_depense($form_values);
 
+$params = [];
 if($_GET["mois"]) {
   $params[] = "mois=".$_GET["mois"];
 }
@@ -23,6 +24,6 @@ if($_GET["annee"]) {
   $params[] = "annee=".$_GET["annee"];
 }
 
-redirection("../index.php?" . join($params, "&"));
+redirection("../index.php?" . join("&", $params));
 
 ?>
